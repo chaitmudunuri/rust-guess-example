@@ -83,8 +83,15 @@ Yay! 72. You got it in 3 tries.
 ```
 
 ### Version 4  
-We will change the code so that `GuessingState` is self-encompassing.
-The code will look like `while guessing_state.read_input().ok()`
+We will change the code so that `GuessingState` is self-encompassing.  
+The code should read much simpler.  
+```
+fn main() {
+    let mut guessing_state = GuessingState::new(1, 100);
+    while !guessing_state.input().ok() {}
+}
+```
+
 * `GuessingState` will implement `new` and `Display` trait
 * `new` will take guessing range as input so that it is reusable
 * `Display` is like `.toString` in Java
