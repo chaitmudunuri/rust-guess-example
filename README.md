@@ -60,3 +60,28 @@ struct GuessingState {
 
 * Function `read_input()` will read a number from standard input.
 * Function `check_guess()` will check if guess is right and returns `true` or `false`
+
+**Sample Output**
+```
+Guess the number!
+Please input your guess.
+50
+You guessed: 50
+GuessingState { tries: 1, min: 50, max: 100 } Too small!
+Please input your guess.
+75
+You guessed: 75
+GuessingState { tries: 2, min: 50, max: 75 } Too big!
+Please input your guess.
+67
+You guessed: 67
+GuessingState { tries: 3, min: 67, max: 75 } Too small!
+Please input your guess.
+70
+You guessed: 70
+GuessingState { tries: 4, min: 70, max: 75 } Too small!
+Please input your guess.
+72
+You guessed: 72
+Yay! 72. You got it in 4 tries.
+```
