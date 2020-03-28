@@ -10,6 +10,6 @@ Crates are similar to packages in Java or modules in Python/Go.
 * Use `cargo build` to build the code
 * Use `cargo run` to run the code
 
-**_v1_** - Version is straight copy from the Rust book.
+**v1** - Version is straight copy from the Rust book.
 **Source**: [Programming a Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
 
