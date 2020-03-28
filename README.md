@@ -1,5 +1,5 @@
 # Rust Guessing Game 
-## Learn Rust Basics by improving the game
+## Learn Rust Basics using the game
 
 Goal: Showcase various features of Rust by building and improvising the Guessing Game from Rust.
 We start with the basic code from the **Rust Book** and add new data structures and functions to make the code modular and reusable.
@@ -17,9 +17,9 @@ If the guess is bigger than secret, it says _Too big!_ and it small says _Too sm
 
 **Source**: [Programming a Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)  
 
-**Version 2 - v2**
-Version 1 just shows guidelines aorund guess (Too big or small).  
-Version 2 will improvise by showing number of tries and guessing range to make it easy for user.
+**Version 2 - v2**  
+My issue with Version 1 is that just shows guidelines aorund guess (Too big or small).  
+In this version we will improvise by showing number of tries and guessing range to make it easy for user.
 
 Added variables `num_tries` and `guessing_range`
 
@@ -41,4 +41,19 @@ Please input your guess.
 You guessed: 12
 Tries: 3. Range (1, 12). Too big!
 Please input your guess.
+```
+
+**Version 3 - v3**  
+Version 2 is better but some issues to handle.  
+* All functionality is defined in main
+* Keeping track of tries and guessing range is not easy
+* Code can be better if we use a function to read input and another to guess
+* Let us introduce a state object (struct) to keep better track of guessing
+
+```
+struct GuessingState {
+    tries: u8,
+    min: u8,
+    max: u8
+}
 ```
