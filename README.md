@@ -10,14 +10,14 @@ Crates are similar to packages in Java or modules in Python/Go.
 * Use `cargo build` to build the code
 * Use `cargo run` to run the code
 
-**Version 1 - v1**  
+**Version 1**  
 This is straight copy from the Rust book.  
 User is asked to guess a number between 1 and 100.  
 If the guess is bigger than secret, it says _Too big!_ and it small says _Too small!_
 
 **Source**: [Programming a Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)  
 
-**Version 2 - v2**  
+**Version 2**  
 My issue with Version 1 is that just shows guidelines aorund guess (Too big or small).  
 In this version we will improvise by showing number of tries and guessing range to make it easy for user.
 
@@ -43,8 +43,8 @@ Tries: 3. Range (1, 12). Too big!
 Please input your guess.
 ```
 
-**Version 3 - v3**  
-Version 2 is better but some issues to handle.  
+**Version 3**  
+I see some improvements to be done to version 2.  
 * All functionality is defined in main
 * Keeping track of tries and guessing range is not easy
 * Code can be better if we use a function to read input and another to guess
