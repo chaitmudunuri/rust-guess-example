@@ -90,4 +90,22 @@ The code will look like `while guessing_state.read_input().ok()`
 * `Display` is like `.toString` in Java
 * Display will show a guessing range instead of Debug input
 * Display will be like `[min]========[left]====[right]========[max]`
-* `read_input` and `check_guess` will be implemented on `GuessingState`
+* `read_input()` and `check_guess()` will be implemented on `GuessingState`
+
+**Sample Output**
+```
+Guess the number!
+Guess: [1 - 100] (0)
+[==================================================================================================]
+50
+Guess: [1 - 50] (1)
+[================================================]==================================================
+25
+Guess: [25 - 50] (2)
+========================[========================]==================================================
+37
+Guess: [25 - 37] (3)
+========================[===========]===============================================================
+30
+Yay! You got it in 3 tries.
+```
