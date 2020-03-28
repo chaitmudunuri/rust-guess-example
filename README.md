@@ -1,2 +1,15 @@
-# rust-guess-example
-Rust - Programming Guess - Example to study language features and build modular code
+# Rust Guessing Game 
+## Learn Rust Basics by improving the game
+
+Goal: Showcase various features of Rust by building and improvising the Guessing Game from Rust.
+We start with the basic code from the **Rust Book** and add new data structures and functions to make the code modular and reusable.
+
+Using `cargo search` to find the latest versions of the crates.
+Crates are similar to packages in Java or modules in Python/Go.
+
+* Use `cargo build` to build the code
+* Use `cargo run` to run the code
+
+v1 - Version is straight copy from the Rust book.
+**Source**: [Programming a Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
+
