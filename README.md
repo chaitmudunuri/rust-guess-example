@@ -57,3 +57,6 @@ struct GuessingState {
     max: u32,
 }
 ```
+
+* Function `read_input()` will read a number from standard input.
+* Function `check_guess()` will check if guess is right and returns `true` or `false`
