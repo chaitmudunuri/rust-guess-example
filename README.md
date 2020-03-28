@@ -73,15 +73,21 @@ Please input your guess.
 You guessed: 75
 GuessingState { tries: 2, min: 50, max: 75 } Too big!
 Please input your guess.
-67
-You guessed: 67
-GuessingState { tries: 3, min: 67, max: 75 } Too small!
-Please input your guess.
 70
 You guessed: 70
 GuessingState { tries: 4, min: 70, max: 75 } Too small!
 Please input your guess.
 72
 You guessed: 72
-Yay! 72. You got it in 4 tries.
+Yay! 72. You got it in 3 tries.
 ```
+
+### Version 4  
+We will change the code so that `GuessingState` is self-encompassing.
+The code will look like `while guessing_state.read_input().ok()`
+* `GuessingState` will implement `new` and `Display` trait
+* `new` will take guessing range as input so that it is reusable
+* `Display` is like `.toString` in Java
+* Display will show a guessing range instead of Debug input
+* Display will be like \[min\]========\[left\]====\[right\]========\[max\]
+* `read_input` and `check_guess` will be implemented on `GuessingState`
