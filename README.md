@@ -89,5 +89,5 @@ The code will look like `while guessing_state.read_input().ok()`
 * `new` will take guessing range as input so that it is reusable
 * `Display` is like `.toString` in Java
 * Display will show a guessing range instead of Debug input
-* Display will be like `\[min\]========\[left\]====\[right\]========\[max\]`
+* Display will be like `[min]========[left]====[right]========[max]`
 * `read_input` and `check_guess` will be implemented on `GuessingState`
