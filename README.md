@@ -11,7 +11,9 @@ Crates are similar to packages in Java or modules in Python/Go.
 * Use `cargo run` to run the code
 
 **v1** - Version is straight copy from the Rust book.
+
 User is asked to guess a number between 1 and 100.
 If the guess is bigger than secret, it says _Too big!_ and it small says _Too small!_
+
 **Source**: [Programming a Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
 
