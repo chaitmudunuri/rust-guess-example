@@ -52,8 +52,8 @@ I see some improvements to be done to version 2.
 
 ```
 struct GuessingState {
-    tries: u8,
-    min: u8,
-    max: u8
+    tries: u32,
+    min: u32,
+    max: u32,
 }
 ```
