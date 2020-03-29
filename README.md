@@ -117,6 +117,6 @@ Guess: [25 - 37] (3)
 Yay! You got it in 3 tries.
 ```
 ### Version 5  
-Final version with 'Guess' module
-The GuessingState will move into its own library.
-Added `lib.rs` and moved `GuessingState` to it.
+Final version with 'Guess' module.  
+The GuessingState will move into its own library.  
+Added `lib.rs` and moved `GuessingState` to it.  
